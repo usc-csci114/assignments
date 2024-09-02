@@ -91,6 +91,8 @@ At the prompt users can enter one of the following:
 
 If the user enters anything other than the options above, ignore the input after printing a message (e.g "Unable to parse input, please try again.")
 
+If the user enters a 5 letter "word", but it is not in the word list then print out a message (e.g. "Invalid word, please try again"). Can you write a function that finds a word in the word list in O(log n)?
+
 ##### Handling Guesses
 
 To handle a guess you need to determine which letters in the guess are in the target word and if they are in the correct location as you print out the guess. One suggestion is to model the "board" as 6 strings that you modify after each guess. Each guess then only requires you to modify one string. Think about how to use string concatenation or a `stringstream` to do this. After each guess print all six strings, including the '*' placeholder strings for their upcoming guesses.
