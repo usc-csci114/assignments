@@ -30,10 +30,10 @@ You may use any data structures you deem necessary to solve this problem.
 
 Use the `.fail()` method on `cin` (and any others needed) to verify that all 6 values entered were numbers. If there are any issues parsing a value, the program should detect this, print out an informative message, ignore any values input and give the user the option to re-enter the values.
 
-###Program 2: Reading and Processing Data
+### Program 2: Reading and Processing Data
 The Iris Dataset is an early data set (1936) that dispite it's age is very useful for testing machine learning algorithms. For this part of the assignment you will read in and do some simple processing of the data.
 
-####The Iris Data
+#### The Iris Data
 The Iris data contains measurements of the length and width of the sepal and petal of various specimins along with an identifier for which of three species the flower belonged. A file called `iris.txt` is included in your starter code, the lines look like:
 
 ```
@@ -43,12 +43,12 @@ The Iris data contains measurements of the length and width of the sepal and pet
 ```
 There are 150 records (lines) total. The dataset is often used to see if a classifier can be build that can accurately predict the species of a specimin based on the length and width values.
 
-####Your Task
+#### Your Task
 Your task is to write a program called `iris.cpp` that reads in the Iris data and computes the min, max, mean and std. deviation of the 4 values for each of the three species.
 
 Your program should then present this data in a table with the columns in order: sepal length, sepal width, petal length, and petal width. The three rows should be setosa, versicolor and virginica. In each cell print out the min, max, mean, std. dev.
 
-####Formatting the table
+#### Formatting the table
 You have some flexibility to make the formatting of the table nice, but you should include a header, column names, and row names. There should be seperators like `|` or `*` between the columns and rows. You should print the values with two decimal places only and the values should be centered in the cells. You probably want to review the `setw` and `setprecision` iomanipulators that you get when you `#include <iomanip>`. These will help you format your table without hardcoding values or spacing, though you may need to hardcode the total width. Other data structures like `stringstreams` might be helpful too.
 
 An example table (with only one row):
@@ -91,7 +91,7 @@ At the prompt users can enter one of the following:
 
 If the user enters anything other than the options above, ignore the input after printing a message (e.g "Unable to parse input, please try again.")
 
-#####Handling Guesses
+##### Handling Guesses
 
 To handle a guess you need to determine which letters in the guess are in the target word and if they are in the correct location as you print out the guess. One suggestion is to model the "board" as 6 strings that you modify after each guess. Each guess then only requires you to modify one string. Think about how to use string concatenation or a `stringstream` to do this. After each guess print all six strings, including the '*' placeholder strings for their upcoming guesses.
 
@@ -101,7 +101,7 @@ If the user gets the word correct, print the entire word in green and give the u
 
 If the user guesses 6 times without getting the word correct, print the correct word after printing their last guess and then give the user the option for a new game or to quit.
 
-####Testing/Debugging
+#### Testing/Debugging
 
 When testing/debugging feel free to hardcode the word. This will make it eaiser to figure out if your code is correct. Also, we've included a second file with only 10 words that will also make it eaiser to test/debug your code. Another idea is that once you switch to the big word list you print out the target word once before the game begins so you know what the answer is.
 
