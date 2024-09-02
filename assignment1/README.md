@@ -1,14 +1,14 @@
 ## CSCI 114 Assignment #1
 For this assignment you will develop three programs that will help give you practice with simple I/O in C++.
 
-###Program 1: Triangle Area Calculation
+### Program 1: Triangle Area Calculation
 There is a formula from coordinate geometry that allows for the calculation of the area of a triangle given the coordinates of the three corners:
 
 `|(1/2)*(x1(y2 − y3) + x2(y3 − y1) + x3(y1 − y2)|`
 
 where `(x1, y1)` `(x2, y2)` and `(x3, y3)` are the coordinates of the three corners. We need the magnitude bars because the formula may return a negative area depending on the order of the points, but of course all areas are positive.
 
-####Your task
+#### Your task
 
 Write a program called "triangle.cpp" that prompts users to enter the points of a triangle and then print out the answer. The prompt should describe how the user should input the points and how to quit the program.
 
@@ -26,7 +26,7 @@ If the input is the single word `quit` on one line, the program should quit, dis
 
 You may use any data structures you deem necessary to solve this problem.
 
-####Error checking
+#### Error checking
 
 Use the `.fail()` method on `cin` (and any others needed) to verify that all 6 values entered were numbers. If there are any issues parsing a value, the program should detect this, print out an informative message, ignore any values input and give the user the option to re-enter the values.
 
@@ -62,11 +62,11 @@ An example table (with only one row):
 -------------------------------------------------------------------------------------------------
 
 ```
-###Program 3: Wordle
+### Program 3: Wordle
 
 For the final program you will implement a text version of the word game Wordle. Wordle is a word-guessing game where the player is trying to guess a 5 letter word in just 6 guesses. After each guess the game will show which letters are in the right place or which letters appear in the word but are in the wrong place.
 
-####Your Task
+#### Your Task
 
 We have provided a list of 5 letter words to use for your game. When you program starts you should read this list of words into a `vector` of strings. The user will be able to play multiple times, so we'll need this list to pick the words.
 
